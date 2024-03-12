@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
-
+import Head from 'next/head'
 import { url } from "inspector";
 
 const myFont = localFont({
