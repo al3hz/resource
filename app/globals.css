@@ -1,0 +1,94 @@
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1.03);
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1.03);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+}
+
+.imagen-fondo {
+  position: fixed;
+  z-index: -1;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background-image: url(../public/imagenes/background/20200206164357.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fade-in {
+  animation: fade 0.5s ease-in;
+}
+
+.foto-de-perfil {
+  border-radius: 50%;
+  height: 200px;
+  width: fit-content;
+}
+
+.nombre-usuario {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.descripcion {
+  font-size: 25px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400px;
+  color: black;
+}
+
+.texto-todosSociales {
+  font-size: 25px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400px;
+  font-weight: bold;
+  color: black;
+}
+
+.iconosRedesSociales:hover {
+  transform: scale(1.1);
+}
+
+.customButton {
+  background-color: rgb(26, 28, 29);
+  border-radius: 10px;
+  height: 60px;
+  color: white;
+  font-size: 20px;
+  border-style: none;
+  animation: zoomOut 0.2s forwards;
+}
+
+.customButton:hover {
+  animation: zoomIn 0.2s forwards;
+}
+
+.socials-images {
+  width: 40px;
+  height: 40px;
+}
+
